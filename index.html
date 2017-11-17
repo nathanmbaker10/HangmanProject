@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <script src="reloadSelectBox.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body onload="setUpVars()">
+<center>
+    <h1>Welcome to Hangman!</h1>
+
+    <h4>Choose difficulty to start new game</h4>
+    <div id="Difficulty Buttons">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="startGame('easy'); reloadTextBox()" id="easy">Easy</button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" onclick="startGame('medium'); reloadTextBox()" id="medium">Medium</button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="startGame('hard'); reloadTextBox()" id="hard">Hard</button>
+    </div>
+    <br><div id="guess"></div></br>
+     Guess Letter: <select id="selectBox">
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+        <option value="d">d</option>
+        <option value="e">e</option>
+        <option value="f">f</option>
+        <option value="g">g</option>
+        <option value="h">h</option>
+        <option value="i">i</option>
+        <option value="j">j</option>
+        <option value="k">k</option>
+        <option value="l">l</option>
+        <option value="m">m</option>
+        <option value="n">n</option>
+        <option value="o">o</option>
+        <option value="p">p</option>
+        <option value="q">q</option>
+        <option value="r">r</option>
+        <option value="s">s</option>
+        <option value="t">t</option>
+        <option value="u">u</option>
+        <option value="v">v</option>
+        <option value="w">w</option>
+        <option value="x">x</option>
+        <option value="y">y</option>
+        <option value="z">z</option>
+     </select>
+    <button class="mdl-button mdl-js-button mdl-button--primary" onclick="makeGuess()" id="guessButton" disabled>guess</button>
+    <div id="image"><image src="img/Hangman-0.png"></image></div>
+
+    <div id="win"></div>
+
+    <div id="guesses"></div>
+
+
+
+
+
+</center>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#guess{
+    position: static;
+    font-size: xx-large;
+}
+.active {
+    line-height: 2em;
+}
+#guess {
+    color: red;
+}
