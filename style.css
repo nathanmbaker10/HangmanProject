@@ -8,3 +8,9 @@
 #guess {
     color: red;
 }
+
+#border{
+    border-style: ridge;
+    width: 200px;
+    height: 50px;
+}

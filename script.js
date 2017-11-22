@@ -16,9 +16,10 @@ function setUpVars() {
 
 
 function startGame(level) {
+    document.getElementById("win").innerHTML = '';
     incorrectGuesses = 0;
     guessArray = [];
-    document.getElementById("guesses").innerHTML = '';
+    document.getElementById("guesses").innerHTML = "Guess Bank:";
     document.getElementById("image").innerHTML = "<image src=\"img/Hangman-0.png\">";
     wordArray = [];
     document.getElementById("guessButton").disabled = false;
@@ -58,7 +59,8 @@ function makeGuess() {
     selectBox.removeChild(selectBox.options[selectBox.selectedIndex]);
     guessArray.push(letterGuess);
     var guesses = guessArray.join();
-    document.getElementById("guesses").innerHTML = guesses;
+    document.getElementById("guesses").innerHTML = "Guess Bank:<br>"+ guesses;
+        guesses;
     var guessedCorrectly = false;
     for (var i = 0; i < currentWord.length; i++) {
         if (currentWord[i] == letterGuess) {
